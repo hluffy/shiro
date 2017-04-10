@@ -4,7 +4,8 @@
     
     <resultMap type="UserInfo" id="userResultMap">
 <!--         <id property="studentId" column="student_id"></id> -->
-		<result property="userName" column="username"></result>
+		<id propert="userName" column="username"></id>
+<!-- 		<result property="userName" column="username"></result> -->
         <result property="password" column="password"/>
         <result property="age" column="age"></result>
         <result property="name" column="name"></result>
