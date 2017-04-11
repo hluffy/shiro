@@ -4,7 +4,7 @@
     
     <resultMap type="UserInfo" id="userResultMap">
 <!--         <id property="studentId" column="student_id"></id> -->
-		<id propert="userName" column="username"></id>
+		<id property="userName" column="username"></id>
 <!-- 		<result property="userName" column="username"></result> -->
         <result property="password" column="password"/>
         <result property="age" column="age"></result>
@@ -21,8 +21,12 @@
 <!--     </resultMap> -->
     
     
-    <select id="getUserInfo" resultType="UserInfo" resultMap="userResultMap">
+    <select id="getUserInfo" resultMap="userResultMap">
         select * from user
+    </select>
+    
+    <select id="getUserInfoAsNameAndPwd" parameterType="com.dk.object.UserInfo" resultMap="userResultMap">
+        select * from user where username=#{userName} and password=#{password}
     </select>
       
 </mapper> 

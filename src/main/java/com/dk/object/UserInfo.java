@@ -1,6 +1,12 @@
 package com.dk.object;
 
-public class UserInfo {
+import java.io.Serializable;
+
+public class UserInfo implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4815401433468494819L;
 	private String userName;
 	private String password;
 	private Integer age;

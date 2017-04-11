@@ -23,4 +23,11 @@ public class UserServiceImpl implements UserService{
 		return infos;
 	}
 
+	public UserInfo getUserInfoAsNameAndPwd(UserInfo userInfo) {
+		// TODO Auto-generated method stub
+		UserInfo info = new UserInfo();
+		info = dao.getUserInfoAsNameAndPwd(userInfo);
+		return info;
+	}
+
 }

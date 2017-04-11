@@ -6,5 +6,6 @@ import com.dk.object.UserInfo;
 
 public interface UserService {
 	List<UserInfo> getUserInfo();
+	UserInfo getUserInfoAsNameAndPwd(UserInfo userInfo);
 
 }
