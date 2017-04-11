@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hello Welcome!  
+	${successMsg} Welcome!  
 	<shiro:principal/>  
     <br><br>  
       
